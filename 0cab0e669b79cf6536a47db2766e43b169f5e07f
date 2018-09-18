@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6e7665c1_79a4b29d",
+        "filename": ".travis.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1015051
+      },
+      "writtenOn": "2018-09-18T14:30:52Z",
+      "side": 0,
+      "message": "Maybe use jdk 8",
+      "revId": "0cab0e669b79cf6536a47db2766e43b169f5e07f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
