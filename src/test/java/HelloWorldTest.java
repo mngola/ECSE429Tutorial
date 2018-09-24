@@ -28,4 +28,9 @@ public class HelloWorldTest extends TestCase {
     {
         assertTrue( true );
     }
+
+    @org.junit.Test
+    public void mainTest() {
+        HelloWorld.main(null);
+    }
 }

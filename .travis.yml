@@ -1,5 +1,18 @@
 language: java
+sudo: false
+install: true
+addons:
+  sonarcloud:
+    organization: "mngola-github"
+    token:
+      secure: "aeb56f79efb06ec91f8a749c3e39abaf76e82f9a"
+
 jdk:
   - oraclejdk8
 script:
-  - mvn clean install
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+
+cache:
+  directories:
+  - '$HOME/.m2/repository'
+  - '$HOME/.sonar/cache'
