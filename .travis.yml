@@ -10,8 +10,8 @@ addons:
 jdk:
   - oraclejdk8
 script:
-  - curl -sSL "https://github.com/facebook/infer/releases/download/v$VERSION/infer-linux64-v0.15.0.tar.xz" | sudo tar -C /opt -xJ
-  - ln -s "/opt/infer-linux64-v$VERSION/bin/infer" /usr/local/bin/infer
+  - curl -sSL "https://github.com/facebook/infer/releases/download/v0.15.0/infer-linux64-v0.15.0.tar.xz" | sudo tar -C /opt -xJ
+  - ln -s "/opt/infer-linux64-v0.15.0/bin/infer" /usr/local/bin/infer
   - infer run -- mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
 
 cache:
